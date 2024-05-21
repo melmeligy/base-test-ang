@@ -1,0 +1,48 @@
+<!-- ***** Wellcome Area Start ***** -->
+    <section class="wellcome_area clearfix" id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md" style="margin-top: -20%;">
+                    <div class="wellcome-heading">
+                        <h2>تطبيق د. مصر</h2>
+                        <h3>M.E</h3>
+                        <p>المرحلة الثانية - الاندلس</p>
+                    </div>
+                    <div class="get-start-area">
+                        <div class="row">
+                            <p style="color:aliceblue; margin-right: 2%;">ادخل رقم العمارة و رقم الشقة للحصول علي البيانات الخاصة بها</p>
+                        </div>
+                        <!-- Form Start -->
+                        <form (ngSubmit)="onSubmit()" #f="ngForm" class="form-inline">
+                            <input 
+                                type="number" 
+                                class="form-control" 
+                                placeholder="عماره رقم"
+                                id="buildingNo"
+                                ngModel
+                                name="buildingNo"
+                                required>
+                            <input 
+                                type="number" 
+                                class="form-control" 
+                                placeholder="شقه رقم"
+                                id="flatNo" 
+                                ngModel 
+                                name="flatNo" 
+                                required>
+                            <input type="submit" class="submit" [disabled]="!f.valid" value="بحث">
+                        </form>
+                        <!-- Form End -->
+                    </div>
+                    <!-- Welcome thumb -->
+                    <div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
+                        <img src="../assets/img/bg-img/welcome-img.png" alt="">
+                    </div>
+                     
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    <!-- ***** Wellcome Area End ***** -->
+

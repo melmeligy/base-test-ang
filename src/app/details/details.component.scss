@@ -1,0 +1,62 @@
+.tip-box {
+    color: #2e5014;
+    background: #d5efc2;
+}
+
+.note-box, .warning-box, .tip-box {
+    padding: 8px 8px 3px 26px;
+}
+
+.shadow {
+    background: #F7F8F9;
+    padding: 3px;
+    margin: 10px 0;
+}
+
+.tip-icon {
+    background: #92CD59;
+}
+.info-tab {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    top: 8px;
+}
+.info-tab {
+    float: left;
+    margin-left: -23px;
+}
+p.res{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+p.cherry{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #e83e8c;
+}
+label{
+    float: right
+}
+
+button.back{
+    align-self: center;
+}
+
+.alert-success{
+    border-radius: 15px;
+}
+
+canvas {
+    border-radius: 15px;
+    image-rendering: optimizeSpeed;             /* Older versions of FF          */
+    image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+    image-rendering: -webkit-optimize-contrast; /* Safari                        */
+    image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+    image-rendering: pixelated;                 /* Awesome future-browsers       */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+  }

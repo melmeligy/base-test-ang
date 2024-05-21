@@ -1,0 +1,54 @@
+
+    <!-- ***** Results section Start ***** -->
+    <section class="result_area special-area section_padding_100" #results>
+            <div class="container">
+                <div class="row" >
+                    <div class="col-12">
+                        <div class="alert alert-success" role="alert">
+                            <h4><p class="res">مواصفات الشقه </p><p class="cherry">دور {{floor}} - {{flatOriantation}} - {{windDir}} - {{connectedText}} </p></h4>
+                        </div>
+                    </div>
+                </div>
+            
+                <br>
+                
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2" style="max-width: 100%">
+                        <div style="overflow: scroll;">
+                            <canvas #myCanvas width="1102" height="780" (click)="canvasClicked($event)"> 
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--
+                <br>
+                <br>
+                <div class="row" >
+                    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+                    <ul>[
+                        <div *ngFor="let building of buildings">
+                                new Building( {{building.buildingNo}}, {{building.oriantation}}, {{building.posX}}, {{building.posY}}, {{building.connected}} ),
+                        </div>
+                        ]
+                    </ul>
+                    </div>
+                </div>
+                -->
+                
+            </div>
+            <br>
+            <div class="row">
+                <div class="col text-center">
+                    <input type="submit" class="submit" (click)="goBack()" value="عودة">
+                </div>
+            </div>
+            
+            <ngx-loading [show]="loading" [config]="{ animationType: ngxLoadingAnimationTypes.circleSwish, backdropBorderRadius: '3px' }" [template]="results"></ngx-loading>
+
+    </section>
+        <!-- ***** Results section ends ***** -->
+
+        
